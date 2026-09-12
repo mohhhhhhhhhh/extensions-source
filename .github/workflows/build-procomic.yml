@@ -13,9 +13,9 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Fetch ProComic PR
+        - name: Fetch ProComic PR
         run: |
-          git fetch origin pull/16421/head:procomic-pr
+          git fetch https://github.com/keiyoushi/extensions-source.git pull/16421/head:procomic-pr
           git checkout procomic-pr
 
       - name: Set up Java 17
